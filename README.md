@@ -39,13 +39,13 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 
 ### PCA
 > Principal component analysis can be generated using *MVP.Data.PC()* function.  
-> Two files will be generated:
+> Two files will be generated:  
 > *mvp.pc.bin*  
 > *mvp.pc*  
 
 ### Data input  
 > In this section, data are loaded from files generated in the *Import and adapt genotypic and phenotypic data* section  
-> Three data files are loaded:
+> Three data files are loaded:  
 > *genotype*  
 > *phenotype* which contains a column *Taxa* containing sample names and the phenotype column name *protein*  
 > *map* which contains columns *SNP* (SNP IDs), *CHROM* (chromosomes where SNPS are), *POS* (the position of the SNP), *REF* (the reference allele) and *ALT* (the alternative allele).  
