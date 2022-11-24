@@ -23,28 +23,32 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 
 ### Import and adapt genotypic and phenotypic data
 > Data from *geno.hmp.txt* and *pheno.txt* are imported and prepared using *MVP.data()* function.  
+>   
 > Six files are created:    
-> *MVP.Data.20221123_211412*  
-> *mvp.hmp.geno.bin*  
-> *mvp.hmp.geno*  
-> *mvp.hmp.geno.ind*  
-> *mvp.hmp.geno.map*  
-> *mvp.hmp.phe*  
+> -*MVP.Data.20221123_211412*  
+> -*mvp.hmp.geno.bin*  
+> -*mvp.hmp.geno*  
+> -*mvp.hmp.geno.ind*  
+> -*mvp.hmp.geno.map*  
+> -*mvp.hmp.phe*  
 
 ### Kinship  
 > Kinship can be done using MVP.Data.Kin() function.  
+>   
 > Two files will be generated:  
-> *mvp.kin.bin*  
-> *mvp.kin*  
+> -*mvp.kin.bin*  
+> -*mvp.kin*  
 
 ### PCA
 > Principal component analysis can be generated using *MVP.Data.PC()* function.  
+>   
 > Two files will be generated:  
-> *mvp.pc.bin*  
-> *mvp.pc*  
+> -*mvp.pc.bin*  
+> -*mvp.pc*  
 
 ### Data input  
-> In this section, data are loaded from files generated in the *Import and adapt genotypic and phenotypic data* section  
+> In this section, data are loaded from files generated in the *Import and adapt genotypic and phenotypic data* section.  
+>   
 > Three data files are loaded:  
 > -*genotype*  
 > -*phenotype* which contains a column *Taxa* containing sample names and the phenotype column name *protein*  
