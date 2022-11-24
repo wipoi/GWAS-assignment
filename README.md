@@ -32,7 +32,7 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > *mvp.hmp.phe*  
 
 ### Kinship  
-> Kinship can be done using MVP.Data.Kin() function.
+> Kinship can be done using MVP.Data.Kin() function.  
 > Two files will be generated:  
 > *mvp.kin.bin*  
 > *mvp.kin*  
@@ -46,15 +46,18 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 ### Data input  
 > In this section, data are loaded from files generated in the *Import and adapt genotypic and phenotypic data* section  
 > Three data files are loaded:  
-> *genotype*  
-> *phenotype* which contains a column *Taxa* containing sample names and the phenotype column name *protein*  
-> *map* which contains columns *SNP* (SNP IDs), *CHROM* (chromosomes where SNPS are), *POS* (the position of the SNP), *REF* (the reference allele) and *ALT* (the alternative allele).  
+> -*genotype*  
+> -*phenotype* which contains a column *Taxa* containing sample names and the phenotype column name *protein*  
+> -*map* which contains columns *SNP* (SNP IDs), *CHROM* (chromosomes where SNPS are), *POS* (the position of the SNP), *REF* (the reference allele) and *ALT* (the alternative allele).  
 
 ### GWAS 
 > In this section, GWAS is runt on each phenotype column using the MVP()* function in a *for* loop.  
-> The *FarmCPU (Fixed and random model Circulating Probability Unification)*  method is used, but *GLM* and *MLM* methods can also be used.  
+>   
+> The *FarmCPU (Fixed and random model Circulating Probability Unification)*  method is used, but *GLM* and *MLM* methods can also be used.
+>     
 > Different parameters can my added, for exampl if covariates are used or if other methods than farmCPU are used.  
-> None new files are generated (example in output):  
+>   
+> Nine new files are generated (example in output):  
 > *MVP.20221123_213323* : Report messages and steps of the GWAS.  
 > *protein.FarmCPU* and *protein.FarmCPU_signals* : containg SNP information and results from the analysis.  
 > *protein.FarmCPU.Circular-Manhattan*, *protein.FarmCPU.Rectangular-Manhattan* : Manhattan plots from the results.  
