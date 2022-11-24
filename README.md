@@ -5,8 +5,8 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > R and Rtools can be downloaded from : https://posit.co/download/rstudio-desktop/.
 
 ## rMVP R package 
-Scripts for this section are in *mvp.R*.
-Examples of outputs from rMVP section are in *output.rMVP*.  
+> Scripts for this section are in *mvp.R*.  
+> Examples of outputs from rMVP section are in *output.rMVP*.  
 
 ### Installation and loading  
 > *rMVP* package have to be installed and loaded using:  
