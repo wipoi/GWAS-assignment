@@ -23,7 +23,7 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 
 ### Import and adapt genotypic and phenotypic data
 > Data from *geno.hmp.txt* and *pheno.txt* are imported and prepared using *MVP.data()* function.  
-> Six files will be created (examples are in output_files):  
+> Six files are created:    
 > *MVP.Data.20221123_211412*  
 > *mvp.hmp.geno.bin*  
 > *mvp.hmp.geno*  
