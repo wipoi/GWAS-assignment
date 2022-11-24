@@ -6,7 +6,7 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 
 ## rMVP R package 
 > Scripts for this section are in *mvp.R*.  
-> Examples of outputs from rMVP section are in *output.rMVP*.  
+> Examples of outputs from rMVP section are in *output_rMVP*.  
 
 ### Installation and loading  
 > *rMVP* package have to be installed and loaded using:  
