@@ -1,8 +1,8 @@
 # GWAS-assignment  
 Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of the *BVG-7003* course. Two software will be used : *rMVP* and *GAPIT*.  
 
-## Installing R and Rtools  
-> R and Rtools can be downloaded from : https://posit.co/download/rstudio-desktop/.
+## Installing R, Rstudio and Rtools  
+> R, Rstudio and Rtools can be downloaded from : https://posit.co/download/rstudio-desktop/.
 
 ## rMVP R package 
 > Scripts for this section are in *mvp.R*.  
