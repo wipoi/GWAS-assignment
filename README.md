@@ -89,12 +89,21 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > And can be changed using:  
 > `setwd("Path/to/GAPITdata/for/GWAS/from/actual/directory")`  
 
-### Import and adapt genotypic and phenotypic data  
+### Import genotypic and phenotypic data  
 > Data from *geno.hmp.txt* and *pheno.txt* are imported using *read.table()*.  
 > **Note**: geno.hmp.txt is not the same as the one used for rMVP since the latter scripts needs a # after the rs of the first line, which GAPIT doesn't need.  
  
 ### Analysing phenotype data  
 > Phenotypic data can be analyzed using *str*, *hist*, *mean*, *range* and *sd* function and lnes with missing data can be counted using:   
-`which(is.na(pheno$protein))`  
+> `which(is.na(pheno$protein))`  
 
+### GWAS using *Mixed Linear Model* (*MLM*)   
+> In this block, GWAS is performed without compression has de *MLM* model by setting a number of group equal to the number of individual within the population and by regrouping by 1 individual so that all are kept individual.   
+> output****
+### GWAS using *compressed MLM model* (*CMLM*)
 
+### GWAS using different kinship clustering methods
+
+### GWAS using *Multiple Locus Mixed Linear Model* (*MLMM*)
+
+#### GWAS using *FarmCPU* model
