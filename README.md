@@ -92,15 +92,15 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > Actual directory can be visualized using:  
 > `getwd()`  
 > And can be changed using:  
-> `setwd("Path/to/GAPITdata/for/GWAS/from/actual/directory")`  
+> `setwd("Path/to/GWAS_data")`  
 
 ### Import genotypic and phenotypic data  
 > Data from *geno.hmp.txt* and *pheno.txt* are imported using *read.table()*.  
-> **Note**: geno.hmp.txt is not the same as the one used for rMVP since the latter scripts needs a # after the rs of the first line, which GAPIT doesn't need.  
+> **Note**: geno.hmp.txt is not in the same format as the one used for rMVP since the latter scripts needs a # after the rs of the first line, which GAPIT doesn't need.  
  
 ### Analysing phenotype data  
-> Phenotypic data can be analyzed using *str*, *hist*, *mean*, *range* and *sd* function and lnes with missing data can be counted using:   
-> `which(is.na(pheno$protein))` 
+> Phenotypic data can be analyzed using *str*, *hist*, *mean*, *range* and *sd* function and lines with missing data can be counted using:   
+> `which(is.na(pheno$protein))`  
 > Example of outputs for these metrics are given in the R script.  
 
 ### GWAS
