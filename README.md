@@ -111,9 +111,9 @@ Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out o
 ```  
 > By retracing the origin of this error using:  
 `options(error = recover)`  
-> The error seems to came from line 194 of the function GAPIT.Genotype.View, which is:
-`loc[i,1]=mean(pieceD,na.rm=T)`
-> It seems it cannot attribute anything to loc[i,1] because i is equal to 1 and loc do not have any lines.
+> The error seems to came from line 194 of the function GAPIT.Genotype.View, which is:  
+`loc[i,1]=mean(pieceD,na.rm=T)`  
+> It seems it cannot attribute anything to loc[i,1] because i is equal to 1 and loc do not have any lines.  
 > Output files are then the ones generated before the error and a empty file names *GAPIT.Genotype.Density_R_sqaure* have not been given in output_gapit.  
 
 ### GWAS using *Mixed Linear Model* (*MLM*)   
