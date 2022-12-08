@@ -5,7 +5,7 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > R, Rstudio and Rtools can be downloaded from : https://posit.co/download/rstudio-desktop/.
 
 ## Extract files from *.tar.gz* folders
-> Files can be extracted using:
+> Files can be extracted using:  
 > `untar("FilesToUntarAndGunzip.tar.gz")`  
 
 ## rMVP R scripts  
