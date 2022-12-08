@@ -120,7 +120,7 @@ Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out o
 > In this block, GWAS is performed without compression (*MLM* model) by setting a number of group equal to the number of individual within the population and by regrouping by 1 individual so that all are kept individual.   
 > 
 > The model produced eigth output files:  
-> -*GAPIT.Genotype.Density_R_sqaure*: empty, not given.  
+> -*GAPIT.Genotype.Density_R_sqaure*:  graphs of correlations and relations between distance and markers (density).    
 > -*GAPIT.Genotype.Kin_Zhang* and *GAPIT.Genotype.Kin_Zhang*: the *.csv* kinship data file and the corresponding kinship plot.   
 > -*GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D*: the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
 > -*GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*: the *.csv* data file associated with the eigenValue of de principal components (PCs) of the PCA and the corresponding graph.  
@@ -129,7 +129,7 @@ Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out o
 > In this block, GWAS is performed using compression (*CMLM* model) by grouping data by 10 as an example.  The grouping number can be changed according to the data, see *"Mixed linear model approach for genome-wide association studies" Zhang et al., Nature Genetics 2010* for more information. 
 >  
 > The model also produced eigth output files:  
-> -*GAPIT.Genotype.Density_R_sqaure*: empty, not given.  
+> -*GAPIT.Genotype.Density_R_sqaure*:  graphs of correlations and relations between distance and markers (density).    
 > -*GAPIT.Genotype.Kin_Zhang* and *GAPIT.Genotype.Kin_Zhang* which are the *.csv* kinship data file and the corresponding kinship plot.  
 > -*GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D* which are the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
 > -*GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of the principal components (PCs) of the PCA and the corresponding graph.  
@@ -140,7 +140,7 @@ Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out o
 > In this block, GWAS is performed using different kinship clustering methods to group individuals according to their kinship. The number of PCs is optimized using the Bayesian information criteria (BIC) based on the trait in *pheno.txt*, which is none herein.
 >  
 > Again, this model produced eigth output files:  
-> -*GAPIT.Genotype.Density_R_sqaure*: empty, not given.  
+> -*GAPIT.Genotype.Density_R_sqaure*:  graphs of correlations and relations between distance and markers (density).    
 > -*GAPIT.Genotype.Kin_Zhang* and *GAPIT.Genotype.Kin_Zhang* which are the *.csv* kinship data file and the corresponding kinship plot.  
 > -*GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D* which are the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
 > -*GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of the principal components (PCs) of the PCA and the corresponding graph.  
@@ -151,19 +151,16 @@ Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out o
 > In this block, GWAS is performed using *Multiple Locus Mixed Linear Model* (*MLMM* model) which takes as covariates associated markers.  
 >  
 > This model produced six output files:  
-> -*GAPIT.Genotype.Density_R_sqaure*: empty, not given.   
+> -*GAPIT.Genotype.Density_R_sqaure*:  graphs of correlations and relations between distance and markers (density).    
 > -*GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D* which are the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
-> -*GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of the principal components (PCs) of the PCA and the corresponding graph.  
-> 
-> The differences can't be observed here as the data file containing SNPs and P-values have not been generated due to the error.  
+> -*GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of the principal components (PCs) of the PCA and the corresponding graph.    
 
 ### GWAS using *FarmCPU* model
 > In this block, GWAS is performed using *Fixed and random model Circulating Probability Unification* (*FarmCPU* model). This model aimed to correct for false-positives and cofounding between markers and cofactors. More informations are available in *"Iterative Usage of Fixed and Random Effect Models for
 Powerful and Efficient Genome-Wide Association Studies", Liu et al., PLOS Genetics (2016)*. 
 >  
 > This model also generates six output files:  
-> -*GAPIT.Genotype.Density_R_sqaure*: empty, not given.   
+> -*GAPIT.Genotype.Density_R_sqaure*: graphs of correlations and relations between distance and markers (density).     
 > -*GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D* which are the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
 > -*GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of the principal components (PCs) of the PCA and the corresponding graph.  
-> 
-> The differences can't be observed here as the data file containing SNPs and P-values have not been generated due to the error.  
+
