@@ -5,7 +5,7 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > R, Rstudio and Rtools can be downloaded from : https://posit.co/download/rstudio-desktop/.
 
 ## rMVP R scripts  
-> Scripts for this section are in *mvp.R*.  
+> Scripts for this section are in *rMVP/mvp.R*.  
 > Examples of outputs from rMVP section are in *output_rMVP*.  
 
 ### Installation and loading  
@@ -75,7 +75,7 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > -*protein.Phe_Dist* : a graph of the phenotype distribution.  
 
 ## GAPIT R scripts 
-> Scripts for this section are in *GAPIT.R*.  
+> Scripts for this section are in *GAPIT/GAPIT.R*.  
 > Examples of outputs from GAPIT section are in *output_gapit*.  
 
 ### Installation and loading requiered packages 
