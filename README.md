@@ -106,7 +106,9 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 ### GWAS
 > Here are GWAS analysis using GAPIT and five different models.   
 > **Note**: running these sections might produce the error:
-`Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out of bounds`  
+```
+Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out of bounds
+```  
 > By retracing the origin of this error using:  
 `options(error = recover)`  
 > The error seems to came from line 194 of the function GAPIT.Genotype.View, which is:
