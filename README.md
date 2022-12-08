@@ -19,12 +19,14 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > Actual directory can be visualized using:  
 > `getwd()`  
 > And can be changed using:  
-> `setwd("Path/to/rMVPdata/for/GWAS/from/actual/directory")`  
+> `setwd("Path/to/GWAS_data/")`  
 
 ### Import and adapt genotypic and phenotypic data
-> For the example herein, data from *geno.hmp.txt* and *pheno.txt* are imported. *pheno.txt* contains a sole variable named *protein* quantified for all taxa that are also in *geno.hmp.txt*.  
+> For the example herein, data from *geno.hmp.txt* and *pheno.txt* are imported.  
+> *pheno.txt* contains a sole variable named *protein* quantified for all taxa that are also in *geno.hmp.txt*.  
 > Data are imported and prepared using *MVP.data()* function.   
-> A *#* must be put after *rs* on the fisrt line of *geno.hmp.txt* file to input in the good format for *rMVP*.  
+> 
+> **note:** A *#* must be placed after *rs* on the fisrt line of *geno.hmp.txt* file to input in the good format for *rMVP*.  
 >   
 > Six files are created:    
 > -*MVP.Data.20221123_211412*  
