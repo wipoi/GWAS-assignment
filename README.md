@@ -79,10 +79,11 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > Examples of outputs from GAPIT section are in *output_gapit*.  
 
 ### Installation and loading requiered packages 
-> Devtools, GAPIT3 and GAPIT functions need to be installed using:  
+> Devtools, GAPIT3 and GAPIT functions need to be installed and loaded using:  
 > ```
 > install.packages("devtools")  
-> devtools::install_github("jiabowang/GAPIT3",force=TRUE)  
+> devtools::install_github("jiabowang/GAPIT3",force=TRUE)
+> library(GAPIT3)
 > source("http://zzlab.net/GAPIT/GAPIT.library.R")  
 > source("http://zzlab.net/GAPIT/gapit_functions.txt")  
 > ```  
