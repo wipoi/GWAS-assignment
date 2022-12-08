@@ -1,5 +1,5 @@
 # GWAS-assignment  
-Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of the *BVG-7003* course. Two tools will be used : *rMVP* and *GAPIT*.  
+Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of the *BVG-7003* course. Two tools will be used : *rMVP* and *GAPIT*. Example have been made using the genotype data file *geno.hmp.txt* and the phenotype data file *pheno.txt* available in GWAS_data directory.  
 
 ## Installing R, Rstudio and Rtools  
 > R, Rstudio and Rtools can be downloaded from : https://posit.co/download/rstudio-desktop/.
