@@ -22,7 +22,9 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > `setwd("Path/to/rMVPdata/for/GWAS/from/actual/directory")`  
 
 ### Import and adapt genotypic and phenotypic data
-> Data from *geno.hmp.txt* and *pheno.txt* are imported and prepared using *MVP.data()* function.  
+> For the example herein, data from *geno.hmp.txt* and *pheno.txt* are imported. *pheno.txt* contains a sole variable named *protein* quantified for all taxa that are also in *geno.hmp.txt*.  
+> Data are imported and prepared using *MVP.data()* function.   
+> A *#* must be put after *rs* on the fisrt line of *geno.hmp.txt* file to input in the good format for *rMVP*.  
 >   
 > Six files are created:    
 > -*MVP.Data.20221123_211412*  
@@ -79,8 +81,8 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
 > ```
 > install.packages("devtools")  
 > devtools::install_github("jiabowang/GAPIT3",force=TRUE)  
-> source("http://www.zzlab.net/GAPIT/GAPIT.library.R")  
-> source("http://www.zzlab.net/GAPIT/gapit_functions.txt")  
+> source("http://zzlab.net/GAPIT/GAPIT.library.R")  
+> source("http://zzlab.net/GAPIT/gapit_functions.txt")  
 > ```  
 
 ### Set working directory  
@@ -95,12 +97,31 @@ Here are scripts for the Genome-Wide Association Studies (GWAS) assignment of th
  
 ### Analysing phenotype data  
 > Phenotypic data can be analyzed using *str*, *hist*, *mean*, *range* and *sd* function and lnes with missing data can be counted using:   
-> `which(is.na(pheno$protein))`  
+> `which(is.na(pheno$protein))` 
+> Example of outputs for these metrics are given in the R script.  
+
+### GWAS
+> Here are GWAS analysis using GAPIT and four different models.   
+> **Note**: running these sections might produce the error:
+`Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out of bounds`  
+> By retracing the origin of this error using:  
+`options(error = recover)`  
+> The error seems to came from line 194 of the function GAPIT.Genotype.View, which is:
+`loc[i,1]=mean(pieceD,na.rm=T)`
+> It seems it cannot attribute anything to loc[i,1] because i is equal to 1 and loc do not have any lines.
+> Output files are then the ones generated before the error and a empty file names *GAPIT.Genotype.Density_R_sqaure* have not been given in output_gapit.  
 
 ### GWAS using *Mixed Linear Model* (*MLM*)   
-> In this block, GWAS is performed without compression has de *MLM* model by setting a number of group equal to the number of individual within the population and by regrouping by 1 individual so that all are kept individual.   
-> output****
-### GWAS using *compressed MLM model* (*CMLM*)
+> In this block, GWAS is performed without compression (*MLM* model) by setting a number of group equal to the number of individual within the population and by regrouping by 1 individual so that all are kept individual.   
+> The model produced eigth output files:
+> *GAPIT.Genotype.Density_R_sqaure*: empty, not given. 
+> *GAPIT.Genotype.Kin_Zhang* and *GAPIT.Genotype.Kin_Zhang* which are the *.csv* kinship data file and the corresponding kinship plot.  
+> *GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D* which are the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
+> *GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of de principal components (PCs) of the PCA and the corresponding graph. 
+
+### GWAS using *compressed MLM model* (*CMLM*)  
+> In this block, GWAS is performed using compression (*CMLM* model) by grouping data by 10 as an example.  The grouping number may be change according to the data, see ***"Mixed linear model approach for genome-wide association studies" Zhang et al., Nature Genetics 2010*** for more information.  
+
 
 ### GWAS using different kinship clustering methods
 
