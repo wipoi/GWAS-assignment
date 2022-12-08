@@ -151,9 +151,9 @@ Error in `[<-`(`*tmp*`, i, 1, value = mean(pieceD, na.rm = T)) : subscript out o
 > In this block, GWAS is performed using *Multiple Locus Mixed Linear Model* (*MLMM* model) which takes as covariates associated markers.  
 >  
 > This model produced six output files:  
-> *GAPIT.Genotype.Density_R_sqaure*: empty, not given.   
-> *GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D* which are the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
-> *GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of the principal components (PCs) of the PCA and the corresponding graph.  
+> -*GAPIT.Genotype.Density_R_sqaure*: empty, not given.   
+> -*GAPIT.Genotype.PCA*, *GAPIT.Genotype.PCA_2D* and *GAPIT.Genotype.PCA_3D* which are the *.csv* PCA data file and the corresponding PCA graphs in 2D (2 PCs)  and 3D (3PCs).  
+> -*GAPIT.Genotype.PCA_eigenvalues* and *GAPIT.Genotype.PCA_eigenValue*, the *.csv* data file associated with the eigenValue of the principal components (PCs) of the PCA and the corresponding graph.  
 > 
 > The differences can't be observed here as the data file containing SNPs and P-values have not been generated due to the error.  
 
